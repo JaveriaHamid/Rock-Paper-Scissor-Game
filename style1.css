@@ -130,6 +130,7 @@
    .choice{
     font-size: 10px;
     text-align: center;
+    margin-top: 30px;
    }
    .score{
     font-size: 10px;
@@ -161,6 +162,10 @@
     margin-inline: 6px; 
     padding: 5px 9px;
     font-size: 11px;
+   }
+   .reload{
+    padding: 6px 10px;
+    font-size: 15px;
    }
    .result{
     font-size: 25px;
