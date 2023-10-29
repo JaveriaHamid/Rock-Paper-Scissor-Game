@@ -112,18 +112,16 @@ function gameOver(playerScore, computerScore){
     })
   
     chooseMove.innerText = 'Game Over!';
-    chooseMove.style.fontSize = '3rem';
+    chooseMove.style.fontSize = '23px';
     chooseMove.style.letterSpacing = '6px';
     chooseMove.style.color = 'red';
 
    if (playerScore === computerScore){
-    resultDisplay.style.fontSize = '2rem';
     resultDisplay.innerText = "It's a Draw!";
     resultDisplay.style.color = "white";
    }
 
    if(playerScore > computerScore){
-    resultDisplay.style.fontSize = '3rem';
     resultDisplay.style.letterSpacing = '1px';
     resultDisplay.innerText = 'YOU WIN :)';
     resultDisplay.style.color = "#2ad32a";
@@ -131,7 +129,6 @@ function gameOver(playerScore, computerScore){
    
    }
    else if(playerScore < computerScore){
-    resultDisplay.style.fontSize = '3rem';
     resultDisplay.style.letterSpacing = '1px';
     resultDisplay.innerText = 'YOU LOSE :(';
     resultDisplay.style.color = "#ff0000";

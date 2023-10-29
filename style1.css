@@ -121,21 +121,19 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 612px)
+@media screen and (max-width: 400px)
 {
    .title{
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 14px;
    }
    .choice{
-    position: absolute;
-    top: 100px;
-    width: 100vw;
+    font-size: 10px;
+    text-align: center;
    }
    .score{
-    position: absolute;
-    top: 200px;
-    width: 100vw;
+    font-size: 10px;
+    text-align: center;
    }
    .player-choice, .computer-choice{
     font-size: 1em;
@@ -143,14 +141,28 @@
     .player-score, .computer-score {
         font-size: 1em;
     }
-   .move{
-    font-size: 1rem;
+    .p-choice, .c-choice {
+        font-size: 18px;
+    }
+    .p-count, .c-count {
+        font-size: 1rem;
+    }
+   .move h2{
+    font-size: 21px;
     text-align: center;
+   }
+   .moves-left {
+    font-size: 1rem;
    }
    .options{
     width: 60vw;
    }
    .options button{
     margin-inline: 6px; 
+    padding: 5px 9px;
+    font-size: 11px;
+   }
+   .result{
+    font-size: 25px;
    }
 }
