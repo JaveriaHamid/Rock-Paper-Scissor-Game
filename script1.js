@@ -110,10 +110,13 @@ function gameOver(playerScore, computerScore){
     rpsButtons.forEach(button => {
       button.computedStyleMap.display = 'none';
     })
+
+    var pixel = window.matchMedia("(max-width: 480px)");
+
   
     chooseMove.innerText = 'Game Over!';
-    chooseMove.style.fontSize = '23px';
-    chooseMove.style.letterSpacing = '6px';
+    movesLeftDisplay.style.fontSize= (pixel.matches) ? '2.2em' : '3em';
+    movesLeftDisplay.style.letterSpacing= (pixel.matches) ? '2px' : '3px';
     chooseMove.style.color = 'red';
 
    if (playerScore === computerScore){
